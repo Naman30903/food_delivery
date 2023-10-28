@@ -1,8 +1,57 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:food_delivery/Pages/ItemPage.dart';
+
+class Platter {
+  final String title;
+  final String description;
+  final double price;
+  final String imageUrl;
+
+  Platter(this.title, this.description, this.price, this.imageUrl);
+}
+
+class Food {
+  final List<Platter> platters = [
+    Platter(
+      "Whopper",
+      "description",
+      300,
+      "assets/images/Whopper.png",
+    ),
+    Platter(
+      "Pizza",
+      "description",
+      450,
+      "assets/images/pizza.png",
+    ),
+    Platter(
+      "Cheese Sandwich",
+      "description",
+      120,
+      "assets/images/Cheese.png",
+    ),
+    Platter(
+      "Noodle",
+      "description",
+      180,
+      "assets/images/noodle.png",
+    ),
+    Platter(
+      "Pasta",
+      "description",
+      200,
+      "assets/images/pasta.png",
+    ),
+    Platter(
+      "Cold Drink",
+      "description",
+      300,
+      "assets/images/colddrink.png",
+    ),
+  ];
+}
 
 class Dishes extends StatefulWidget {
   const Dishes({super.key});

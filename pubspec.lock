@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  cart_item:
+    dependency: "direct main"
+    description:
+      name: cart_item
+      sha256: "0f6c35f3bcfb4e4636e35cff587b6d216c4aafcdb2e3def122124fb12261dac7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   characters:
     dependency: transitive
     description:
@@ -70,6 +78,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_cart:
+    dependency: "direct main"
+    description:
+      name: flutter_cart
+      sha256: "759fa1d199157c1eb6a15db1b8cd2eb27ccae31331b55b70f88c59ba0ab3cf42"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.8"
   flutter_lints:
     dependency: "direct dev"
     description:

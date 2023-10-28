@@ -3,7 +3,7 @@ import 'package:food_delivery/Pages/Cart.dart';
 import 'package:food_delivery/Pages/Drawer.dart';
 import 'package:food_delivery/components/Categories.dart';
 import 'package:food_delivery/components/AppBar.dart';
-import 'package:food_delivery/components/Dishes.dart';
+import 'package:food_delivery/Pages/Dishes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -69,9 +69,6 @@ class _HomePageState extends State<HomePage> {
           // Padding(padding: EdgeInsets.only(top: 20,left: 10),
           // child: ,)
           const CategoriesWidget(),
-
-          // Padding(padding: EdgeInsets.only(top: 20,left: 10),
-          // child: ,)
 
           const Dishes(),
         ],
