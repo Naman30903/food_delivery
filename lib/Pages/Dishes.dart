@@ -67,7 +67,7 @@ class _DishesState extends State<Dishes> {
       scrollDirection: Axis.vertical,
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          vertical: 15,
+          vertical: 10,
           horizontal: 5,
         ),
         child: Column(
@@ -111,7 +111,7 @@ class _DishesState extends State<Dishes> {
                         ),
                       ),
                       const SizedBox(
-                        width: 100,
+                        width: 50,
                         height: 25,
                       ),
                       Column(
@@ -133,11 +133,11 @@ class _DishesState extends State<Dishes> {
                               itemCount: 5,
                               itemSize: 18,
                               itemPadding:
-                                  const EdgeInsets.symmetric(horizontal: 4),
+                              const EdgeInsets.symmetric(horizontal: 4),
                               itemBuilder: (context, _) => const Icon(
-                                    Icons.star,
-                                    color: Colors.red,
-                                  ),
+                                Icons.star,
+                                color: Colors.red,
+                              ),
                               onRatingUpdate: (index) {}),
                           const SizedBox(
                             height: 5,
@@ -211,7 +211,7 @@ class _DishesState extends State<Dishes> {
                         ),
                       ),
                       const SizedBox(
-                        width: 100,
+                        width: 50,
                         height: 25,
                       ),
                       Column(
@@ -219,7 +219,7 @@ class _DishesState extends State<Dishes> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           const SizedBox(
-                            height: 13,
+                            height: 5,
                           ),
                           const Text(
                             "Pizza",
@@ -233,11 +233,11 @@ class _DishesState extends State<Dishes> {
                               itemCount: 5,
                               itemSize: 18,
                               itemPadding:
-                                  const EdgeInsets.symmetric(horizontal: 4),
+                              const EdgeInsets.symmetric(horizontal: 4),
                               itemBuilder: (context, _) => const Icon(
-                                    Icons.star,
-                                    color: Colors.red,
-                                  ),
+                                Icons.star,
+                                color: Colors.red,
+                              ),
                               onRatingUpdate: (index) {}),
                           const SizedBox(
                             height: 5,
@@ -333,11 +333,11 @@ class _DishesState extends State<Dishes> {
                               itemCount: 5,
                               itemSize: 18,
                               itemPadding:
-                                  const EdgeInsets.symmetric(horizontal: 4),
+                              const EdgeInsets.symmetric(horizontal: 4),
                               itemBuilder: (context, _) => const Icon(
-                                    Icons.star,
-                                    color: Colors.red,
-                                  ),
+                                Icons.star,
+                                color: Colors.red,
+                              ),
                               onRatingUpdate: (index) {}),
                           const SizedBox(
                             height: 5,
@@ -433,11 +433,11 @@ class _DishesState extends State<Dishes> {
                               itemCount: 5,
                               itemSize: 18,
                               itemPadding:
-                                  const EdgeInsets.symmetric(horizontal: 4),
+                              const EdgeInsets.symmetric(horizontal: 4),
                               itemBuilder: (context, _) => const Icon(
-                                    Icons.star,
-                                    color: Colors.red,
-                                  ),
+                                Icons.star,
+                                color: Colors.red,
+                              ),
                               onRatingUpdate: (index) {}),
                           const SizedBox(
                             height: 5,
@@ -533,11 +533,11 @@ class _DishesState extends State<Dishes> {
                               itemCount: 5,
                               itemSize: 18,
                               itemPadding:
-                                  const EdgeInsets.symmetric(horizontal: 4),
+                              const EdgeInsets.symmetric(horizontal: 4),
                               itemBuilder: (context, _) => const Icon(
-                                    Icons.star,
-                                    color: Colors.red,
-                                  ),
+                                Icons.star,
+                                color: Colors.red,
+                              ),
                               onRatingUpdate: (index) {}),
                           const SizedBox(
                             height: 5,
@@ -581,3 +581,169 @@ class _DishesState extends State<Dishes> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import 'dart:ui';
+// import 'package:flutter/material.dart';
+// import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+// import 'package:food_delivery/Pages/ItemPage.dart';
+//
+// class Platter {
+//   final String title;
+//   final String description;
+//   final double price;
+//   final String imageUrl;
+//
+//   Platter(this.title, this.description, this.price, this.imageUrl);
+// }
+//
+// class Food {}
+//
+// class Dishes extends StatefulWidget {
+//   const Dishes({super.key});
+//
+//   @override
+//   State<Dishes> createState() => _DishesState();
+// }
+//
+// class _DishesState extends State<Dishes> {
+//   final List<Platter> platters = [
+//     Platter(
+//       "Whopper",
+//       "description",
+//       300,
+//       "assets/images/Whopper.png",
+//     ),
+//     Platter(
+//       "Pizza",
+//       "description",
+//       450,
+//       "assets/images/pizza.png",
+//     ),
+//     Platter(
+//       "Cheese Sandwich",
+//       "description",
+//       120,
+//       "assets/images/Cheese.png",
+//     ),
+//     Platter(
+//       "Noodle",
+//       "description",
+//       180,
+//       "assets/images/noodle.png",
+//     ),
+//     Platter(
+//       "Pasta",
+//       "description",
+//       200,
+//       "assets/images/pasta.png",
+//     ),
+//     Platter(
+//       "Cold Drink",
+//       "description",
+//       300,
+//       "assets/images/colddrink.png",
+//     ),
+//   ];
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return ListView.builder(
+//         itemCount: platters.length,
+//         itemBuilder: (context, index) {
+//           final platter = platters[index];
+//           return GestureDetector(
+//             onTap: () {
+//               Navigator.of(context).push(
+//                 MaterialPageRoute(
+//                   builder: (context) => const ItemPage(),
+//                 ),
+//               );
+//             },
+//             child: Card(
+//               shape: RoundedRectangleBorder(
+//                 borderRadius: BorderRadius.circular(10.0),
+//               ),
+//               child: Column(
+//                 mainAxisAlignment: MainAxisAlignment.center,
+//                 children: [
+//                   Padding(
+//                     padding: const EdgeInsets.symmetric(
+//                         vertical: 20, horizontal: 20),
+//                     child: Image.asset(
+//                       platter.imageUrl,
+//                       height: 100,
+//                       width: 100,
+//                     ),
+//                   ),
+//                   Text(
+//                     platter.title,
+//                     style: const TextStyle(
+//                       fontWeight: FontWeight.bold,
+//                     ),
+//                   ),
+//                   Text(
+//                     'Price: \$${platter.price.toStringAsFixed(2)}',
+//                     style: const TextStyle(
+//                       fontWeight: FontWeight.bold,
+//                       color: Colors.green,
+//                     ),
+//                   ),
+//                 ],
+//               ),
+//             ),
+//           );
+//         });
+//   }
+// }

@@ -86,7 +86,9 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => LoginPage(),
+                        builder: (context) => LoginPage(
+                          onTap: () {},
+                        ),
                       ),
                     );
                   },

@@ -16,8 +16,10 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Future.delayed(Duration(seconds: splashDuration), () {
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => LoginPage()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
+          builder: (context) => LoginPage(
+                onTap: () {},
+              )));
     });
   }
 
